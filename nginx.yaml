@@ -16,8 +16,8 @@ spec:
         app: nginx
     spec:
       containers:
-      - image: nginx
-        name: rahulnetawat/nginx:v1
+      - image: rahulnetawat/nginx:v1
+        name: nginx
         resources:
           requests:
             memory: "64Mi"
