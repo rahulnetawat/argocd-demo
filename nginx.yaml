@@ -16,7 +16,7 @@ spec:
         app: nginx
     spec:
       containers:
-      - image: rahulnetawat/nginx:v3
+      - image: rahulnetawat/nginx:v4
         name: nginx
         resources:
           requests:
