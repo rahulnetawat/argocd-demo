@@ -2,22 +2,22 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: nginx
-  name: nginx
+    app: nginx-dev
+  name: nginx-dev
   namespace: rahul
 spec:
-  replicas: 10
+  replicas: 3
   selector:
     matchLabels:
-      app: nginx
+      app: nginx-dev
   template:
     metadata:
       labels:
-        app: nginx
+        app: nginx-dev
     spec:
       containers:
       - image: nginx
-        name: nginx
+        name: nginx-dev
         resources:
           requests:
             memory: "64Mi"
