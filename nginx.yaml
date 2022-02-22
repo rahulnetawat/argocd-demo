@@ -6,7 +6,7 @@ metadata:
   name: nginx
   namespace: rahul
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: nginx
@@ -16,7 +16,7 @@ spec:
         app: nginx
     spec:
       containers:
-      - image: rahulnetawat/nginx:v3
+      - image: rahulnetawat/nginx:v1
         name: nginx
         resources:
           requests:
